@@ -74,7 +74,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    /// <summary>Wywoływana kiedy wróg (nie-boss) zginie.</summary>
+    //Wywoływana kiedy wróg (nie-boss) zginie.
     public void OnEnemyDefeated()
     {
         Debug.Log("[GameManager] OnEnemyDefeated wywołane!");
@@ -84,7 +84,7 @@ public class GameManager : MonoBehaviour
             SpawnWave();
     }
 
-    /// <summary>Wywoływana kiedy boss zginie.</summary>
+    // Wywoływana kiedy boss zginie.
     public void OnBossDefeated()
     {
         enemiesAlive--;
