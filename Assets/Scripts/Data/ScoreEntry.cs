@@ -2,7 +2,7 @@ using System;
 
 
 // Model danych — jeden wpis w tabeli wyników.
-/// Serializowany do pliku tekstowego CSV.
+// Serializowany do pliku tekstowego CSV.
 
 [Serializable]
 public class ScoreEntry
@@ -21,7 +21,7 @@ public class ScoreEntry
     // Konwertuje wpis do linii CSV.
     public string ToCsv() => $"{playerName},{score},{date}";
 
-    // <summary>Tworzy ScoreEntry z linii CSV.
+    // Tworzy ScoreEntry z linii CSV.
     public static ScoreEntry FromCsv(string line)
     {
         string[] parts = line.Split(',');
