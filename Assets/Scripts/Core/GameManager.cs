@@ -1,10 +1,10 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-/// <summary>
-/// Główny menedżer gry — zarządza falami wrogów, stanem gry, Game Over.
-/// Singleton.
-/// </summary>
+
+// Główny menedżer gry — zarządza falami wrogów, stanem gry, Game Over.
+// Singleton.
+
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
