@@ -1,0 +1,37 @@
+# Ignore Unity generated folders
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+
+# Ignore user-specific files
+/[Uu]serSettings/
+
+# Ignore auto-generated VS/IDE files
+/*.csproj
+/*.unityproj
+/*.sln
+/*.suo
+/*.tmp
+/*.user
+/*.userprefs
+/*.pidb
+/*.booproj
+/*.svd
+
+# Ignore Rider IDE files
+.idea/
+/*.sln.iml
+
+# Ignore crash reports
+sysinfo.txt
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
+
+# Ignore persistent caches
+/[Pp]ackages/manifest.json
+/[Pp]ackages/packages-lock.json

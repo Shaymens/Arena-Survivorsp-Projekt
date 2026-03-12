@@ -1,0 +1,38 @@
+using UnityEngine;
+
+public class PauseManager : MonoBehaviour
+{
+    public static PauseManager Instance { get; private set; }
+    private bool isPaused = false;
+
+    private void Awake()
+    {
+        if (Instance != null && Instance != this) { Destroy(gameObject); return; }
+        Instance = this;
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (isPaused) Resume();
+            else Pause();
+        }
+    }
+
+    public void Pause()
+    {
+        isPaused = true;
+        Time.timeScale = 0f;
+        UIManager.Instance?.ShowPause();
+        Debug.Log("[PauseManager] Gra zapauzowana");
+    }
+
+    public void Resume()
+    {
+        isPaused = false;
+        Time.timeScale = 1f;
+        UIManager.Instance?.HidePause();
+        Debug.Log("[PauseManager] Gra wznowiona");
+    }
+}
