@@ -1,8 +1,8 @@
 using UnityEngine;
 
-/// <summary>
-/// Gracz — sterowany przez użytkownika, zbiera punkty i przedmioty.
-/// </summary>
+
+// Gracz — sterowany przez użytkownika, zbiera punkty i przedmioty.
+
 public class Player : Character
 {
     [Header("Player Settings")]
